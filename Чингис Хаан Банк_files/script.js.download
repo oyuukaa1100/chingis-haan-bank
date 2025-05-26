@@ -1,0 +1,29 @@
+const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  freeMode: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 },
+  },
+});
+
+// Баннерын swiper
+const bannerSwiper = new Swiper('.bannerSwiper', {
+  loop: true,
+  autoplay: {
+    delay: 5000, // 5 секунд тутам автоматаар солигдоно
+    disableOnInteraction: false,
+  },
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
